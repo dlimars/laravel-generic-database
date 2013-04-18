@@ -1,0 +1,25 @@
+{
+    "name": "lamb/laravel-generic-database",
+    "description": "A database driver for Laravel 4 that provides support for generic PDO drivers",
+    "keywords": ["pdo", "database", "generic", "laravel"],
+    "license": "MIT", 
+    "authors": [
+        {
+            "name": "Greg Lamb",
+            "email": "email@greglamb.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Lamb\\LaravelGenericDatabase": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
