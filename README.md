@@ -28,7 +28,7 @@ Add it to the list of providers
 
 ## config/database.php
 
-Add a connection using the postgis driver instead of pgsql
+Add a connection using the generic database driver
 
 ```php
   'odbc' => array(
