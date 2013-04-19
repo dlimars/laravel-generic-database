@@ -28,6 +28,11 @@ class GenericDatabaseServiceProvider extends ServiceProvider {
 					{
 						$config['prefix'] = '';
 					}
+
+					if ( ! isset($config['database']))
+					{
+						$config['database'] = '';
+					}
 			
 					$connector =  new GenericConnector();
 						$pdo = $connector->connect($config);

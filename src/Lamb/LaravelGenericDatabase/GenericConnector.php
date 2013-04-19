@@ -1,5 +1,8 @@
 <?php namespace Lamb\LaravelGenericDatabase;
 
+use Illuminate\Database\Connectors\Connector;
+use Illuminate\Database\Connectors\ConnectorInterface;
+
 class GenericConnector extends Connector implements ConnectorInterface {
 
 	/**
