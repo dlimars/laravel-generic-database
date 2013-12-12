@@ -3,6 +3,20 @@
 class ConnectionFactory extends \Illuminate\Database\Connectors\ConnectionFactory {
 
 	/**
+	 * Establish a PDO connection based on the configuration.
+	 *
+	 * @param  array   $config
+	 * @param  string  $name
+	 * @return \Illuminate\Database\Connection
+	 */
+	public function make(array $config, $name = null)
+	{
+		$config['database'] = '';
+
+		return parent::make($config, $name);
+	}
+
+	/**
 	 * Create a connector instance based on the configuration.
 	 *
 	 * @param  array  $config
