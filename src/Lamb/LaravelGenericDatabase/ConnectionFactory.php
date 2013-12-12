@@ -41,7 +41,7 @@ class ConnectionFactory extends \Illuminate\Database\Connectors\ConnectionFactor
 	 * @param  array   $config
 	 * @return \Illuminate\Database\Connection
 	 */
-	protected function createConnection($driver, PDO $connection, $database, $prefix = '', $config = null)
+	protected function createConnection($driver, \PDO $connection, $database, $prefix = '', $config = null)
 	{
 	    if ($driver == 'generic') {
 	        return new GenericConnection($connection, $database, $prefix, $config);
