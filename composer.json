@@ -1,5 +1,5 @@
 {
-    "name": "lamb/laravel-generic-database",
+    "name": "dlimars/laravel-generic-database",
     "description": "A database driver for Laravel 4 that provides support for generic PDO drivers",
     "keywords": ["pdo", "database", "generic", "laravel"],
     "license": "MIT", 
